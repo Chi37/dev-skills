@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Express to-Do</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+<body>
+    <h1>New Skill</h1>
+    <!-- action is just /skills bc it is sending it to the USER. if you put skills/:id or whatever
+    you'd get the original skill back. -->
+    <!-- when we create form, how is data being represented is important.  -->
+    <form action="/skills" method="POST" autocomplete="off">
+        <input type="text" name="name" >
+        <input type="text" name="description">
+        <input type="number" name="level">
+        <button type="submit">Save Skill</button>
+    </form>
+</body>
+</html>
